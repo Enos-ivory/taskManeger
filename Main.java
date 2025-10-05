@@ -1,5 +1,4 @@
 package Packege_task_maneger;
-import java.util.Collections;
 import java.util.Scanner;
 
 public class Main {
@@ -10,13 +9,16 @@ public class Main {
         int init = 1;
         while (init != 0) {
 
-            System.out.println("____Welcome_a_task_manager_____");
-            System.out.println("for add task type 2");
-            System.out.println("to remove one task type 3");
-            System.out.println("type 4 for list tasks");
-            System.out.println("type 5 to see the ordered list");
-            System.out.println("to quit type 0");
-            System.out.println("_______________________________");
+            System.out.println("\n==================================");
+            System.out.println("     Welcome to Task Manager      ");
+            System.out.println("==================================");
+            System.out.println("1. Show all tasks");
+            System.out.println("2. Add task(s)");
+            System.out.println("3. Remove a task");
+            System.out.println("4. show ordered tasks ");
+            System.out.println("0. Quit");
+            System.out.println("----------------------------------");
+            System.out.print("Type your option: ");
 
             int validation = scanner.nextInt();
             if (validation == 2){
@@ -28,7 +30,6 @@ public class Main {
                 tasKMeneger.adcionarTarefa(task);
                 tasKMeneger.adcionarTarefa(task2);
                 System.out.println("________Show_tasks__________\n");
-                System.out.println(tasKMeneger.listtasks());
 
             } else if (validation == 3) {
                 System.out.println("type the task indice: ");
@@ -37,12 +38,12 @@ public class Main {
                 System.out.println("tarefa removida\n");
                 System.out.println(tasKMeneger.listtasks());
 
-            } else if (validation == 4) {
+            } else if (validation == 1) {
                 System.out.println(tasKMeneger.listtasks());
-            } else if (validation == 5){
+            } else if (validation == 4){
                /// Collections.sort(tasKMeneger);
                 tasKMeneger.orderedList();
-                System.out.println("listas ordenadas \n");
+                System.out.println("Ordered list \n");
                 System.out.println(tasKMeneger.listtasks());
             } else if (validation == 0) {
                 System.out.println("_______Quiting_________");
