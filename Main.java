@@ -17,7 +17,7 @@ public class Main {
             System.out.println("3. Remove a task");
             System.out.println("4. show ordered tasks ");
             System.out.println("0. Quit");
-            System.out.println("----------------------------------");
+            System.out.println("==================================");
             System.out.print("Type your option: ");
 
             int validation = scanner.nextInt();
